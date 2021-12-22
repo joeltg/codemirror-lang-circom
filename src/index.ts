@@ -20,13 +20,14 @@ import { parser } from "lezer-circom"
 // Call/Identifier, Assignment/Identifier, and Value/Identifier
 // are all just tags.name for now.
 const styleNodeProp = styleTags({
-	"input output public include pragma circom main parallel": tags.keyword,
-	"log assert": tags.macroName,
+	"include pragma circom main": tags.keyword,
+	"log assert": tags.operatorKeyword,
+	"input output public parallel": tags.modifier,
 	"if else for while do return": tags.controlKeyword,
 	"signal component var template function": tags.definitionKeyword,
 	LineComment: tags.lineComment,
 	BlockComment: tags.blockComment,
-	CompilerVersion: tags.atom,
+	CompilerVersion: tags.literal,
 	Number: tags.number,
 	String: tags.string,
 
@@ -42,38 +43,22 @@ const styleNodeProp = styleTags({
 	'"&&" "||" "!" "<" "<=" ">" ">=" "==" "!=="': tags.logicOperator,
 	'"===" "<==" "==>"': tags.compareOperator,
 
-	// use tags.className for template names
-	"TemplateDeclaration/Identifier": tags.definition(tags.className),
-	"MainComponentDeclaration/Call/Identifier": tags.className,
+	"TemplateDeclaration/Identifier FunctionDeclaration/Identifier Call/Identifier":
+		tags.function(tags.variableName),
 
-	// use tags.function(tags.variableName) for functions
-	"FunctionDeclaration/Identifier": tags.definition(
-		tags.function(tags.variableName)
-	),
-
-	// use tags.propertyName for signal names
 	"InputSignalDeclaration/Identifier OutputSignalDeclaration/Identifier IntermediateSignalDeclaration/Identifier":
 		tags.definition(tags.propertyName),
 	"PublicSignalsList/Identifier": tags.definition(tags.propertyName),
 	"Value/Signal/Identifier": tags.propertyName,
 
-	// use tags.variableName for variables (we can only style the declaration)
-	"VariableDeclaration/Identifier": tags.definition(tags.variableName),
-
-	// use tags.typeName for components (we can only style the declaration)
-	"ComponentDeclaration/Identifier": tags.definition(tags.typeName),
-
-	// we can't distinguish between template and function calls,
-	// or between component and variable assignments, or between
-	// signal and variable values, so we leave them unstyled.
-	"Call/Identifier Assignment/Identifier Value/Identifier": tags.name,
+	"ComponentDeclaration/Identifier VariableDeclaration/Identifier Assignment/Identifier Value/Identifier":
+		tags.variableName,
 })
 
 export const circomLanguage = LRLanguage.define({
 	parser: parser.configure({
 		props: [
 			indentNodeProp.add({
-				// IfStatement: continuedIndent({ except: /^\s*({|else\b)/ }),
 				"FunctionBody TemplateBody IfBody ElseBody ForLoopBody WhileLoopBody":
 					delimitedIndent({ closing: "}" }),
 			}),
