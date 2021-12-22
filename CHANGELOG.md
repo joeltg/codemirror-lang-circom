@@ -6,11 +6,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
+## [0.0.2]
+
+### Changed
+
+- Upgrade to lezer-circom v0.0.2
+- Pin to exact lezer-circom version
+
 ## [0.0.1]
 
 ### Added
 
 - Initial implementation!
 
-[unreleased]: https://github.com/underlay/codemirror-lang-tasl/compare/v0.0.1...HEAD
-[0.1.0]: https://github.com/underlay/codemirror-lang-tasl/compare/v0.0.1
+[unreleased]: https://github.com/underlay/codemirror-lang-tasl/compare/v0.0.2...HEAD
+[0.0.2]: https://github.com/underlay/codemirror-lang-tasl/compare/v0.0.2
+[0.0.1]: https://github.com/underlay/codemirror-lang-tasl/compare/v0.0.1

@@ -31,7 +31,7 @@
 		"@codemirror/language": "^0.19.5",
 		"@codemirror/lint": "^0.19.3",
 		"@lezer/common": "^0.15.8",
-		"lezer-circom": "^0.0.1"
+		"lezer-circom": "0.0.2"
 	},
 	"devDependencies": {
 		"typescript": "^4.5.2"
