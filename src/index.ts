@@ -38,7 +38,7 @@ const styleNodeProp = styleTags({
 
 	// Operators (none of these are style by default)
 	'"&" "|" "~" "^" ">>" "<<"': tags.bitwiseOperator,
-	'"+" "-" "*" "**" "/" "\\" "%"': tags.arithmeticOperator,
+	'"+" "-" "*" "**" "/" "\\\\" "%"': tags.arithmeticOperator,
 	'"&&" "||" "!" "<" "<=" ">" ">=" "==" "!=="': tags.logicOperator,
 	'"===" "<==" "==>"': tags.compareOperator,
 
