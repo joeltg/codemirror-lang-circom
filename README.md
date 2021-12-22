@@ -1,6 +1,6 @@
 # codemirror-lang-circom
 
-[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg)](https://github.com/RichardLitt/standard-readme) [![license](https://img.shields.io/github/license/joeltg/codemirror-lang-circom)](https://opensource.org/licenses/MIT) [![NPM version](https://img.shields.io/npm/v/codemirror-lang-circom)](https://www.npmjs.com/package/codemirror-lang-circom) ![TypeScript types](https://img.shields.io/npm/types/codemirror-lang-circom)
+[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg)](https://github.com/RichardLitt/standard-readme) [![license](https://img.shields.io/github/license/joeltg/codemirror-lang-circom)](https://opensource.org/licenses/GPL-3.0) [![NPM version](https://img.shields.io/npm/v/codemirror-lang-circom)](https://www.npmjs.com/package/codemirror-lang-circom) ![TypeScript types](https://img.shields.io/npm/types/codemirror-lang-circom)
 
 A Codemirror language extension for circom.
 
