@@ -44,6 +44,7 @@ const styleNodeProp = styleTags({
 
 	// use tags.className for template names
 	"TemplateDeclaration/Identifier": tags.definition(tags.className),
+	"MainComponentDeclaration/Call/Identifier": tags.className,
 
 	// use tags.function(tags.variableName) for functions
 	"FunctionDeclaration/Identifier": tags.definition(

@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
+## [0.0.3]
+
+### Changed
+
+- Upgrade to lezer-circom v0.0.3
+- Fix license link in REAMDE.md
+
 ## [0.0.2]
 
 ### Changed
@@ -19,6 +26,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - Initial implementation!
 
-[unreleased]: https://github.com/underlay/codemirror-lang-tasl/compare/v0.0.2...HEAD
+[unreleased]: https://github.com/underlay/codemirror-lang-tasl/compare/v0.0.3...HEAD
+[0.0.3]: https://github.com/underlay/codemirror-lang-tasl/compare/v0.0.3
 [0.0.2]: https://github.com/underlay/codemirror-lang-tasl/compare/v0.0.2
 [0.0.1]: https://github.com/underlay/codemirror-lang-tasl/compare/v0.0.1
