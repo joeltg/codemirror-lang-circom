@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
+## [0.0.6]
+
+### Changed
+
+- Move highlighting to lezer-circom repo
+- Upgrade dependencies
+
 ## [0.0.5]
 
 ### Changed
@@ -38,7 +45,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - Initial implementation!
 
-[unreleased]: https://github.com/underlay/codemirror-lang-tasl/compare/v0.0.5...HEAD
+[unreleased]: https://github.com/underlay/codemirror-lang-tasl/compare/v0.0.6...HEAD
+[0.0.5]: https://github.com/underlay/codemirror-lang-tasl/compare/v0.0.6
 [0.0.5]: https://github.com/underlay/codemirror-lang-tasl/compare/v0.0.5
 [0.0.4]: https://github.com/underlay/codemirror-lang-tasl/compare/v0.0.4
 [0.0.3]: https://github.com/underlay/codemirror-lang-tasl/compare/v0.0.3
