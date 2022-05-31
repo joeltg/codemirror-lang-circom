@@ -1,11 +1,10 @@
 {
 	"include": ["src"],
 	"compilerOptions": {
-		"outDir": "lib",
 		"strict": true,
-		"module": "ES6",
-		"target": "ESNext",
-		"declaration": true,
+		"outDir": "lib",
+		"module": "es2020",
+		"target": "es2020",
 		"moduleResolution": "node"
 	}
 }
