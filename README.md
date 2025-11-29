@@ -4,8 +4,6 @@
 
 A Codemirror language extension for circom.
 
-> ⚠️ This extension is very rough alpha-quality! There are almost certainly bugs.
-
 ## Table of Contents
 
 - [Install](#install)
@@ -34,15 +32,15 @@ import { keymap } from "@codemirror/view"
 import { defaultKeymap } from "@codemirror/commands"
 
 const view = new EditorView({
-	state: EditorState.create({
-		extensions: [
-			circomLanguage,
-			basicSetup,
-			defaultHighlightStyle,
-			keymap.of(defaultKeymap),
-		],
-	}),
-	parent: document.querySelector("#editor"),
+  state: EditorState.create({
+    extensions: [
+      circomLanguage,
+      basicSetup,
+      defaultHighlightStyle,
+      keymap.of(defaultKeymap),
+    ],
+  }),
+  parent: document.querySelector("#editor"),
 })
 ```
 
